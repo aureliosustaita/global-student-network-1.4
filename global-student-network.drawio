@@ -22,7 +22,7 @@
         <mxCell id="2QoLX_qyOSyjQX9BgWTQ-6" value="Resources&lt;div&gt;File Name: resources.html&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="160" width="120" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="2QoLX_qyOSyjQX9BgWTQ-7" value="Login&lt;div&gt;File Name: login.html&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="2QoLX_qyOSyjQX9BgWTQ-7" value="Login/Register&lt;div&gt;File Name: login.html&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="720" y="160" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="2QoLX_qyOSyjQX9BgWTQ-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="2QoLX_qyOSyjQX9BgWTQ-2" edge="1">
@@ -74,7 +74,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="EQFAO8d1l5EPb8XXR5MC-6" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Note&lt;/font&gt;&lt;/b&gt;&lt;div&gt;Every page will have same navigation bar and footer&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="20" y="360" width="300" height="50" as="geometry" />
+          <mxGeometry x="20" y="280" width="300" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
