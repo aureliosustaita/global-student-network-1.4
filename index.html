@@ -27,7 +27,7 @@
     <p>Welcome to Global Student Network</p>
     <hgroup>
         <h1>Global Student Network</h1>
-        <h2><abbr title="International Community of Students">ICS</abbr> - Connecting Scholars Worldwide</h2>
+        <p>GSN</p>
     </hgroup>
     <hr>
     <nav>
@@ -45,25 +45,22 @@
 </header>
 <main>
     <search>
-        <label for="site-search">Search:</label>
-        <input type="search" id="site-search" name="q" list="search-options">
-        <datalist id="search-options">
-            <option value="Scholarships">
-            <option value="Exchange Programs">
-            <option value="Networking Events">
-        </datalist>
-        <button type="submit">Go</button>
+        <form action="index.html">
+            <label for="query">Search</label>
+            <input id="query" name="q" type="search">
+            <button type="submit">Go!</button>
+        </form>
     </search>
     <img
             class="fit-picture"
             src="ucla.png"
-            alt="UCLA Royce Hall" />
+            alt="UCLA Royce Hall">
     <h2>Rooted In Diversity Driven By Unity</h2>
 
     <!--Change the browser window width to see the image change.-->
     <picture>
-        <source srcset="student.jpeg" media="(orientation: portrait)" />
-        <img src="pictureOfPresident.png" alt="" />
+        <source srcset="student.jpeg" media="(orientation: portrait)">
+        <img src="pictureOfPresident.png" alt="">
     </picture>
     <h3>Milo Gazivoda</h3>
     <p>President of Global Student Network</p>
@@ -89,7 +86,7 @@
 
     <h2>Join Us</h2>
     <video controls>
-        <source src="video.mp4" type="video/mp4" />
+        <source src="video.mp4" type="video/mp4">
     </video>
 
     <p>The Global Student Network at UCLA is a
@@ -129,7 +126,7 @@
         <del>
             <p>“I apologize for the delay.”</p>
         </del>
-        <ins cite="../howtobeawizard.html" datetime="2018-05">
+        <ins cite="../howtobeawizard.html" datetime="2018-05-01">
             <p>“A wizard is never late …”</p>
         </ins>
         <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
@@ -146,6 +143,32 @@
         <p>This is a semantic custom element with structured content.</p>
     </custom-box>
 
+    <canvas id="drawingCanvas" width="200" height="200"></canvas>
+    <script>
+        const canvas = document.getElementById("drawingCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "blue";
+        ctx.fillRect(50, 50, 100, 100);
+    </script>
+
+    <p>Inline SVG Example: <svg width="50" height="50"><circle cx="25" cy="25" r="20" stroke="black" stroke-width="2" fill="green" /></svg></p>
+
+    <p>
+        You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup Language).
+        Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content layer
+        separate. This is called "separation of concerns."
+    </p>
+
+    <label for="ice-cream-choice">Choose a flavor:</label>
+    <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+    <datalist id="ice-cream-flavors">
+        <option value="Chocolate"></option>
+        <option value="Coconut"></option>
+        <option value="Mint"></option>
+        <option value="Strawberry"></option>
+        <option value="Vanilla"></option>
+    </datalist>
 
 </main>
 <footer>
