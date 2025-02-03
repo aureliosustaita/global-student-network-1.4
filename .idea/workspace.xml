@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="-index">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html">
       <change beforePath="$PROJECT_DIR$/partnerships.html" beforeDir="false" afterPath="$PROJECT_DIR$/partnerships.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +70,7 @@
       <updated>1737849200786</updated>
       <workItem from="1737849201907" duration="1607000" />
       <workItem from="1738023162036" duration="778000" />
-      <workItem from="1738511702967" duration="34199000" />
+      <workItem from="1738511702967" duration="34275000" />
     </task>
     <task id="LOCAL-00001" summary="-setting title">
       <option name="closed" value="true" />
@@ -117,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738559417430</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html">
+      <option name="closed" value="true" />
+      <created>1738565473859</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738565473859</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="-setting title" />
     <MESSAGE value="-index" />
-    <option name="LAST_COMMIT_MESSAGE" value="-index" />
+    <MESSAGE value="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html" />
   </component>
 </project>
