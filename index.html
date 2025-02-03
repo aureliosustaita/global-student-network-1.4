@@ -5,10 +5,30 @@
     <title>Homepage</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        custom-box {
+            display: block;
+            border: 2px solid black;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+    <script>
+        class HelloWorld extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = "<p>Hello, World!</p>";
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
 </head>
 <body>
 <header>
-    <h1>Global Student Network</h1>
+    <p>Welcome to Global Student Network</p>
+    <hgroup>
+        <h1>Global Student Network</h1>
+        <h2><abbr title="International Community of Students">ICS</abbr> - Connecting Scholars Worldwide</h2>
+    </hgroup>
     <hr>
     <nav>
         <ul>
@@ -24,7 +44,109 @@
     </nav>
 </header>
 <main>
-    <p>This is the homepage of my HTML-only project.</p>
+    <search>
+        <label for="site-search">Search:</label>
+        <input type="search" id="site-search" name="q" list="search-options">
+        <datalist id="search-options">
+            <option value="Scholarships">
+            <option value="Exchange Programs">
+            <option value="Networking Events">
+        </datalist>
+        <button type="submit">Go</button>
+    </search>
+    <img
+            class="fit-picture"
+            src="ucla.png"
+            alt="UCLA Royce Hall" />
+    <h2>Rooted In Diversity Driven By Unity</h2>
+
+    <!--Change the browser window width to see the image change.-->
+    <picture>
+        <source srcset="student.jpeg" media="(orientation: portrait)" />
+        <img src="pictureOfPresident.png" alt="" />
+    </picture>
+    <h3>Milo Gazivoda</h3>
+    <p>President of Global Student Network</p>
+
+    <div>
+        <blockquote>
+            <p>My goal is that Global Student Network provides concrete
+                and practical solutions to pressing global
+                challenges. Sustainable industrial development
+                can deliver a world without hunger, using sustainable
+                energy for productive activities, and creating jobs,
+                particularly for young people.</p>
+        </blockquote>
+    </div>
+
+    <ol>
+        <li>Value</li>
+        <li>Value</li>
+        <li>Value</li>
+        <li>Value</li>
+        <li>Value</li>
+    </ol>
+
+    <h2>Join Us</h2>
+    <video controls>
+        <source src="video.mp4" type="video/mp4" />
+    </video>
+
+    <p>The Global Student Network at UCLA is a
+        dynamic student organization dedicated to fostering
+        international collaboration and cultural exchange. With a
+        growing network of diverse members, the organization connects
+        students from various backgrounds, providing opportunities for
+        leadership, networking, and professional development. Founded to
+        support global engagement, the Global Student Network hosts events,
+        workshops, and initiatives that bridge communities across campus and beyond.
+        Based at the University of California, Los Angeles, the organization continues
+        to expand its reach, promoting inclusivity and cross-cultural dialogue
+        among students from all disciplines. (PLACEHOLDER)
+    </p>
+
+    <section>
+        <h2>Everything below except the footer is all experiments</h2>
+        <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+        <aside>
+            <p>The Rough-skinned Newt defends itself with a deadly neurotoxin.</p>
+        </aside>
+        <dialog open>
+            <p>Greetings, one and all!</p>
+            <form method="dialog">
+                <button>OK</button>
+            </form>
+        </dialog>
+        <p>Gradually add the <span class="ingredient">olive oil</span> while running the blender slowly.</p>
+        <p>The two most popular science courses offered by the school are <b class="term">chemistry</b>
+        <p>I looked at it and thought <i>This can't be real!</i></p>
+        <p>This is <em>not</em> a drill!</p>
+        <p>
+            The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the
+            array.
+        </p>
+        <p>“You're late!”</p>
+        <del>
+            <p>“I apologize for the delay.”</p>
+        </del>
+        <ins cite="../howtobeawizard.html" datetime="2018-05">
+            <p>“A wizard is never late …”</p>
+        </ins>
+        <p>A <dfn id="def-validator">validator</dfn> is a program that checks for syntax errors in code or documents.</p>
+        <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+        <template>
+            <p>This is a hidden reusable HTML template.</p>
+        </template>
+    </section>
+
+    <audio controls src=audio.mp3></audio>
+
+    <hello-world></hello-world>
+    <custom-box>
+        <p>This is a semantic custom element with structured content.</p>
+    </custom-box>
+
+
 </main>
 <footer>
     <p>&copy; 2025 Global Student Network. All rights reserved.
