@@ -1,51 +1,184 @@
+<!--<body>-->
+<!--<header>-->
+<!--    <h1>Global Student Network</h1>-->
+<!--    <nav class="social-icons">-->
+<!--        <a href="#"><img src="instagram_symbol.svg" alt="Instagram Logo"></a>-->
+<!--        <a href="#"><img src="user%20(1)%201.svg" alt="User Login"></a>-->
+<!--    </nav>-->
+<!--</header>-->
+<!--<main>-->
+<!--    <section class="hero">-->
+<!--        <img src="background.jpg" alt="UCLA Royce Hall">-->
+<!--        <div class="logo-overlay">-->
+<!--            <img src="global_student_network_logo.svg" alt="Global Student Network Logo">-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    <h2>Rooted In Diversity Driven By Unity</h2>-->
+<!--    <nav>-->
+<!--        <ul>-->
+<!--            <li><a href="contact.html">Contact Us</a></li>-->
+<!--            <li><a href="about.html">About Us</a></li>-->
+<!--            <li><a href="faq.html">FAQ</a></li>-->
+<!--            <li><a href="resources.html">Resources</a></li>-->
+<!--            <li><a href="partnerships.html">Partnerships</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</main>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8" />-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+<!--    <link rel="icon" type="image/png" href="favicon.png">-->
+<!--    <title>Global Student Network</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<style>-->
+<!--    .box {-->
+<!--        display: flex;-->
+<!--        flex-direction: row; /*default: row*/-->
+<!--        flex-wrap: nowrap; /*default: nowrap*/-->
+<!--        justify-content: flex-start; /*default: flex-start*/-->
+<!--        align-items: stretch; /*default: stretch*/-->
+<!--        /* NOTE: Align-content is used only when you have items that-->
+<!--        wrap into multiple lines of the flex container, i.e.,-->
+<!--        align-content will not work when flex-wrap is set to “nowrap”-->
+<!--        */-->
+<!--        height: 100vh;-->
+<!--        border: 2px dotted rgb(96 139 168);-->
+<!--    }-->
+
+<!--    .box div {-->
+<!--        width: 100px;-->
+<!--        height: 100px;-->
+<!--        border: 2px solid rgb(96 139 168);-->
+<!--        border-radius: 5px;-->
+<!--        background-color: rgba(164, 178, 187, 0.6);-->
+<!--    }-->
+
+<!--    .box #supers {-->
+<!--        background-color: red;-->
+<!--        color: white;-->
+<!--        align-self: auto; /*default: auto*/-->
+<!--    }-->
+<!--</style>-->
+<!--<div class="box">-->
+<!--    <div>CARS</div>-->
+<!--    <div>TRUCKS</div>-->
+<!--    <div>SUVS</div>-->
+<!--    <div id="supers">SUPERCARS</div>-->
+<!--    <div>CARS</div>-->
+<!--    <div>TRUCKS</div>-->
+<!--    <div>SUVS</div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Global Student Network</title>
-    <link rel="stylesheet" href="styles.css" media = "screen" type="text/css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join the Global Student Network at UCLA to connect, collaborate, and share resources with students from around the world. Participate in events, discussions, and community initiatives.">
-    <meta name="keywords" content="Global Student Network, UCLA, student collaboration, international students, events, community, global network">
-    <meta name="author" content="Global Student Network">
-    <meta property="og:title" content="Global Student Network - UCLA">
-    <meta property="og:description" content="Be part of a vibrant and inclusive community at UCLA. Connect with students globally, participate in exciting events, and expand your network.">
-    <meta property="og:type" content="website">
-    <meta property="instagram:account" content="@gsn.ucla">
+    <title>Global Student Network</title>
 </head>
 <body>
-<header>
-    <h1>Global Student Network</h1>
-    <nav class="social-icons">
-        <a href="#"><img src="instagram_symbol.svg" alt="Instagram"></a>
-        <a href="#"><img src="user%20(1)%201.svg" alt="User Login"></a>
-    </nav>
-</header>
-<main>
-    <img
-            class="fit-picture"
-            src="background.jpg"
-            alt="UCLA Royce Hall"
-            width="100%">
-    <h2>Rooted In Diversity Driven By Unity</h2>
-</main>
-<footer>
-    <nav>
-        <ul>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="resources.html">Resources</a></li>
-            <li><a href="partnerships.html">Partnerships</a></li>
-        </ul>
-    </nav>
-    <p>&copy; 2025 Global Student Network. All rights reserved.
-        Custom Web Design & Web Development by AES
-    </p>
-</footer>
-<noscript>
-    <h2>Error: We have a bias towards assuming JavaScript is enabled!</h2>
-</noscript>
+<style>
+    /* Flex container for layout */
+    .box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        height: 100vh;
+        border: 2px dotted rgb(96 139 168);
+    }
+
+    /* Styling for all flex items */
+    .box div {
+        width: 100px;
+        height: 100px;
+        border: 2px solid rgb(96 139 168);
+        border-radius: 5px;
+        background-color: rgba(164, 178, 187, 0.6);
+    }
+
+    /* Navigation Bar Styling (Apply #F0FAFB background only here) */
+    .box #nav-bar {
+        background-color: #F0FAFB;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        height: 60px; /* Adjust navbar height */
+        width: 100%; /* Make navbar span full width */
+    }
+
+    /* Special styling for SUPERCARS */
+    .box #supers {
+        background-color: red;
+        color: white;
+        align-self: auto;
+    }
+
+    /* Wrapper for image with background color */
+    .image-background {
+        background-color: #F0FAFB;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Ensures background color extends */
+        max-width: 100%;
+    }
+    .image-background img {
+        max-width: 100%; /* Ensure image is responsive */
+        height: auto;
+    }
+    .navbar {
+        background-color: #F0FAFB; /* Matches the background */
+        padding: 15px 0;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-around; /* Evenly spaces links */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: black; /* Change color as needed */
+        font-weight: bold;
+    }
+
+</style>
+<!-- Image with background behind it -->
+<div class="image-background">
+    <img src="background.jpg" alt="Background Image">
+</div>
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">Partnerships</a></li>
+    </ul>
+</nav>
+
 </body>
 </html>
+
+
+
