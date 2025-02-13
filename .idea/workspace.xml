@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="+styles.css">
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="index.html, playing around with flexbox">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
@@ -91,7 +91,8 @@
       <workItem from="1739237206679" duration="690000" />
       <workItem from="1739240016813" duration="800000" />
       <workItem from="1739240840720" duration="2867000" />
-      <workItem from="1739251433940" duration="1132000" />
+      <workItem from="1739251433940" duration="1344000" />
+      <workItem from="1739336142042" duration="9704000" />
     </task>
     <task id="LOCAL-00001" summary="-setting title">
       <option name="closed" value="true" />
@@ -189,7 +190,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738957437129</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="index.html, figuring out flexbox">
+      <option name="closed" value="true" />
+      <created>1739252753693</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1739252753693</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,6 +221,7 @@
     <MESSAGE value="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html" />
     <MESSAGE value="+favicon" />
     <MESSAGE value="+styles.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="+styles.css" />
+    <MESSAGE value="index.html, figuring out flexbox" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.html, figuring out flexbox" />
   </component>
 </project>

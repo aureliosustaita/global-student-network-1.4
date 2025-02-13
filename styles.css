@@ -1,4 +1,103 @@
-body {
+/* Reset Default Margins & Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Times New Roman', serif;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column; /* Ensure stacking */
+}
+/* Main container */
+.container {
+    width: 100vw; /* Ensures full width */
+    max-width: 100%;
     background-color: #F0FAFB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Background Image */
+.image-background {
+    width: 98%; /* Full screen width */
+    height: 87vh; /* Keeps height relative */
+    background-image: url('background.jpg'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 0 0 24px 24px;
+}
+
+/* Top bar with logo & Instagram */
+.content-overlay {
+    position: absolute;
+    top: 20px; /* Moves it down slightly from the top */
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Logo on the left, Instagram on the right */
+    align-items: center;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px; /* Adds space from the left */
+
+}
+
+/* Instagram Icon */
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px; /* Adds space from the right */
+}
+
+/* Centered Hero Text */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text span {
+    color: #3370F6;
+}
+
+.navbar {
+    width: 100vw;
+    height: 13vh; /* Fixed height */
+    background-color: #F0FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Navigation List */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 90%;
+    justify-content: space-evenly;
+}
+/* Navigation Links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #6A6A6A;
+    font-size: 27px;
+}
