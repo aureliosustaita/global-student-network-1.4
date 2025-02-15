@@ -55,10 +55,14 @@ html, body {
     margin-left: 20px; /* Adds space from the left */
 
 }
-
 /* Instagram Icon */
 .social-icon {
     width: 56px;
+    height: 56px;
+    margin-right: 20px; /* Adds space from the right */
+}
+.login {
+    width: 100px;
     height: 56px;
     margin-right: 20px; /* Adds space from the right */
 }
