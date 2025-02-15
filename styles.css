@@ -81,8 +81,10 @@ html, body {
 }
 
 .navbar {
+    position: sticky;
+    top: 0;
     width: 100vw;
-    height: 13vh; /* Fixed height */
+    min-height: 13vh; /* Fixed height */
     background-color: #F0FAFB;
     display: flex;
     justify-content: center;
@@ -100,4 +102,7 @@ html, body {
     text-decoration: none;
     color: #6A6A6A;
     font-size: 27px;
+}
+.banner {
+    display: flex;
 }
