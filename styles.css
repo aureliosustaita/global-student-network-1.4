@@ -50,7 +50,7 @@ html, body {
 
 /* Logo */
 .logo {
-    width: 50px;
+    width: 175px;
     height: 50px;
     margin-left: 20px; /* Adds space from the left */
 
@@ -58,8 +58,8 @@ html, body {
 
 /* Instagram Icon */
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 56px;
+    height: 56px;
     margin-right: 20px; /* Adds space from the right */
 }
 
