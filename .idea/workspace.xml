@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="added footer">
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="added shadow animations to instagram and login icons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +93,7 @@
       <workItem from="1739240840720" duration="2867000" />
       <workItem from="1739251433940" duration="1344000" />
       <workItem from="1739336142042" duration="10733000" />
-      <workItem from="1739652577166" duration="19636000" />
+      <workItem from="1739652577166" duration="24265000" />
     </task>
     <task id="LOCAL-00001" summary="-setting title">
       <option name="closed" value="true" />
@@ -254,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739727536929</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added shadow animations to instagram and login icons">
+      <option name="closed" value="true" />
+      <created>1739730048708</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1739730048708</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,6 +292,7 @@
     <MESSAGE value="added sticky navigation bar&#10;fixed column flex of body" />
     <MESSAGE value="added redirect links to instagram and login logo" />
     <MESSAGE value="added footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added footer" />
+    <MESSAGE value="added shadow animations to instagram and login icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="added shadow animations to instagram and login icons" />
   </component>
 </project>
