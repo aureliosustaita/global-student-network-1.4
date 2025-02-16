@@ -170,7 +170,7 @@ footer {
     font-weight: 400;
     font-family: 'Newsreader', serif;
 }
-.container-3 {
+.vision-section {
     position: relative;
     display: flex;
     height: 100vh;
@@ -201,6 +201,27 @@ footer {
     transform: translate(-120px, 180px);
     z-index: 1;
 }
+.animated-container {
+    align-items: center;
+    margin: 15% auto;
+}
+.animated-container h1 {
+    text-align: center;
+    font-size: 62px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    color: #555555;
+    margin-bottom: 3%
+}
+.animated-container h2 {
+    text-align: center;
+    font-size: 48px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    color: #555555;
+}
+
+
 
 
 
