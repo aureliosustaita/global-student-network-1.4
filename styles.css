@@ -69,10 +69,18 @@ body {
     width: 56px;
     height: 56px;
     margin-top: 3px;
+    border-radius: 45%;
+}
+.social-icon:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
 }
 .login-icon {
     width: 100px;
     height: 56px;
+    border-radius: 22px;
+}
+.login-icon:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
 }
 /* Centered Hero Text */
 .hero-text {
