@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700&display=swap');
 /* Reset Default Margins & Padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+body {
     width: 100%;
     height: 100%;
     font-family: 'Times New Roman', serif;
@@ -22,61 +23,64 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
 }
 
 /* Background Image */
 .image-background {
     width: 98%; /* Full screen width */
-    height: 87vh; /* Keeps height relative */
+    min-height: 87vh; /* Keeps height relative */
     background-image: url('background.jpg'); /* Replace with actual image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     border-radius: 0 0 24px 24px;
+    flex-shrink: 0;
 }
-
-/* Top bar with logo & Instagram */
 .content-overlay {
     position: absolute;
-    top: 20px; /* Moves it down slightly from the top */
+    top: 20px;
     left: 0;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Logo on the left, Instagram on the right */
+    justify-content: space-between; /* Ensures left & right icons are spaced */
     align-items: center;
-    padding: 20px;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
 }
-
+/* New container for Instagram & Login icons */
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Adds spacing between Instagram and login */
+}
 /* Logo */
 .logo {
     width: 175px;
     height: 50px;
-    margin-left: 20px; /* Adds space from the left */
-
 }
 /* Instagram Icon */
 .social-icon {
     width: 56px;
     height: 56px;
-    margin-right: 20px; /* Adds space from the right */
 }
 .login {
     width: 100px;
     height: 56px;
-    margin-right: 20px; /* Adds space from the right */
 }
-
 /* Centered Hero Text */
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -98,7 +102,7 @@ html, body {
 .navbar ul {
     display: flex;
     list-style: none;
-    width: 90%;
+    width: 100%;
     justify-content: space-evenly;
 }
 /* Navigation Links */
@@ -106,6 +110,8 @@ html, body {
     text-decoration: none;
     color: #6A6A6A;
     font-size: 27px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
 }
 .banner {
     display: flex;
