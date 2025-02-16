@@ -143,3 +143,20 @@ body {
 .banner {
     margin-left: 150px;
 }
+hr {
+    display: block;
+    border: none; /* Remove default border */
+    height: 1px; /* Set thickness */
+    background-color: #6A6A6A; /* Set color */
+    width: 90%;
+    margin: 0 auto; /* Auto centers block elements like <hr> */
+}
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px; /* Adds some space around it */
+    color: #6A6A6A;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
+}
