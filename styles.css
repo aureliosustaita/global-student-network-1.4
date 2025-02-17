@@ -557,10 +557,10 @@ footer {
         align-items: center;
     }
     .icon-1, .icon-2 {
-        visibility: hidden;
+        display: none;
     }
     .banner {
-        visibility: hidden;
+        display: none;
     }
     .hero-text {
         font-size: 36px; /* Reduce text size */
