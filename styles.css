@@ -113,36 +113,6 @@ body {
     color: #3370F6;
 }
 
-/*.navbar {*/
-/*    position: sticky;*/
-/*    top: 0;*/
-/*    width: 100vw;*/
-/*    min-height: 13vh; !* Fixed height *!*/
-/*    background-color: #F0FAFB;*/
-/*    display: flex;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*}*/
-/*!* Navigation List *!*/
-/*.navbar ul {*/
-/*    display: flex;*/
-/*    list-style: none;*/
-/*    width: 100%;*/
-/*    justify-content: space-evenly;*/
-/*}*/
-/*!* Navigation Links *!*/
-/*.navbar ul li a {*/
-/*    margin-left: 10px;*/
-/*    text-decoration: none;*/
-/*    font-size: 27px;*/
-/*    font-weight: 400;*/
-/*    font-family: 'Newsreader', serif;*/
-/*    color: var(--text-color, black); !* Fallback: black *!*/
-/*}*/
-/*.navbar:has(a.active) {*/
-/*    background-color: var(--primary-color);*/
-/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-/*}*/
 .navbar {
     position: sticky;
     top: 0;
@@ -152,28 +122,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    ul {
-        display: flex;
-        list-style: none;
-        width: 100%;
-        justify-content: space-evenly;
-
-        li {
-            a {
-                margin-left: 10px;
-                text-decoration: none;
-                font-size: 27px;
-                font-weight: 400;
-                font-family: 'Newsreader', serif;
-                color: var(--text-color, black); /* Fallback: black */
-            }
-        }
-    }
-    &:has(a.active) {
-        background-color: var(--primary-color);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
 }
+/* Navigation List */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+/* Navigation Links */
+.navbar ul li a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
+    color: var(--text-color, black); /* Fallback: black */
+}
+.navbar:has(a.active) {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 #mission {
     color: #003B5C;
     font-family: 'EB Garamond', serif;
