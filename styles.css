@@ -532,6 +532,66 @@ footer {
     .contact-form {
         max-width: 100%; /* Allows form to expand */
     }
+    .container-2,
+    .vision-container,
+    .president-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        min-width: 100%;
+    }
+
+    .right-side, #vision-statement {
+        max-width: 100%;
+
+    }
+
+    .social-icon, .login-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content-overlay {
+        flex-direction: column; /* Stack logo and icons */
+        align-items: center;
+    }
+    .icon-1, .icon-2 {
+        display: none; /* Hides icons on mobile */
+    }
+    .banner {
+        display: none;
+    }
+    .hero-text {
+        font-size: 36px; /* Reduce text size */
+    }
+
+    #mission {
+        display: flex;
+        justify-content: center;
+        font-size: 48px; /* Smaller mission title */
+    }
+
+    #mission-statement {
+        display: flex;
+        justify-content: center;
+        font-size: 18px; /* Reduce mission text size */
+    }
+
+    #vision-statement {
+        font-size: 24px; /* Reduce vision text size */
+    }
+
+    .contact-info h2 {
+        font-size: 36px; /* Smaller heading */
+    }
+
+    .contact-info p {
+        font-size: 20px; /* Adjust text for readability */
+    }
+    .quote-box p {
+        font-size: 16px;
+    }
 }
 
 /*About Section*/
@@ -578,71 +638,6 @@ footer {
     color: #555555;
     font-size: 23px;
     font-weight: 500;
-}
-
-@media (max-width: 768px) {
-    .hero-text {
-        font-size: 36px; /* Reduce text size */
-    }
-
-    #mission {
-        display: flex;
-        justify-content: center;
-        font-size: 48px; /* Smaller mission title */
-    }
-
-    #mission-statement {
-        display: flex;
-        justify-content: center;
-        font-size: 18px; /* Reduce mission text size */
-    }
-
-    #vision-statement {
-        font-size: 24px; /* Reduce vision text size */
-    }
-
-    .contact-info h2 {
-        font-size: 36px; /* Smaller heading */
-    }
-
-    .contact-info p {
-        font-size: 20px; /* Adjust text for readability */
-    }
-    .quote-box p {
-        font-size: 16px;
-    }
-}
-@media (max-width: 768px) {
-    .container-2,
-    .vision-container,
-    .president-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        min-width: 100%;
-    }
-
-    .right-side, #vision-statement {
-        max-width: 100%;
-
-    }
-
-    .social-icon, .login-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .content-overlay {
-        flex-direction: column; /* Stack logo and icons */
-        align-items: center;
-    }
-    .icon-1, .icon-2 {
-        display: none; /* Hides icons on mobile */
-    }
-    .banner {
-        display: none;
-    }
 }
 
 
