@@ -632,6 +632,9 @@ footer {
         flex-direction: column; /* Stack logo and icons */
         align-items: center;
     }
+    .icon-1, .icon-2 {
+        display: none; /* Hides icons on mobile */
+    }
 }
 
 
