@@ -590,7 +590,7 @@ footer {
     }
 
     #mission-statement {
-        font-size: 24px; /* Reduce mission text size */
+        font-size: 18px; /* Reduce mission text size */
     }
 
     #vision-statement {
@@ -621,6 +621,7 @@ footer {
 
     .right-side, #vision-statement {
         max-width: 100%;
+
     }
 
     .social-icon, .login-icon {
@@ -634,6 +635,9 @@ footer {
     }
     .icon-1, .icon-2 {
         display: none; /* Hides icons on mobile */
+    }
+    .banner {
+        display: none;
     }
 }
 
