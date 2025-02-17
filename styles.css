@@ -63,6 +63,7 @@ body {
 .logo {
     width: 175px;
     height: 50px;
+    margin-bottom: 25px;
 }
 /* Instagram Icon */
 .social-icon {
@@ -119,7 +120,7 @@ body {
 }
 /* Navigation Links */
 .navbar ul li a {
-    /*margin-left: -5px;*/
+    margin-left: 10px;
     text-decoration: none;
     color: #6A6A6A;
     font-size: 27px;
@@ -170,7 +171,7 @@ footer {
     font-weight: 400;
     font-family: 'Newsreader', serif;
 }
-.vision-section {
+.vision-container {
     position: relative;
     display: flex;
     height: 100vh;
@@ -189,7 +190,7 @@ footer {
     text-align: center;
     align-items: center;
     min-width: 68%;
-    margin-left: 15px;
+    margin-left: 30px;
     display: flex;
     z-index: 3;
 }
@@ -220,6 +221,257 @@ footer {
     font-weight: 500;
     color: #555555;
 }
+.president-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 48px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 500;
+    color: #555555;
+    height: 150vh;
+    margin-bottom: 35%;
+}
+.picture-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #D9D9D9;
+    color: black;
+}
+.quote-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background-color: #F0FAFB;
+}
+.quote-box p {
+    width: 80%;
+}
+
+/*login style*/
+/* Center the entire password section */
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full screen height */
+    width: 100%; /* Ensures full width */
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+    color: #333;
+}
+
+/* Message above the password input */
+.password-message {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; /* Ensures text is centered */
+}
+
+/* Password form layout */
+.password-form {
+    display: flex;
+    flex-direction: row; /* Ensures elements are in one line */
+    align-items: center; /* Aligns elements vertically */
+    justify-content: center; /* Ensures form is centered */
+    gap: 10px;
+}
+
+/* Label styling */
+.password-form label {
+    font-size: 18px;
+}
+
+/* Input field styling */
+.password-input {
+    width: 200px;
+    height: 36px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #E5E5E5;
+}
+
+/* Enter button styling */
+.password-button {
+    height: 36px;
+    padding: 5px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #999;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.password-button:hover {
+    background-color: #777;
+}
+
+.navbar-non-home {
+    width: 100vw;
+    min-height: 13vh; /* Fixed height */
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Navigation List */
+.navbar-non-home ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: space-evenly;
+}
+/* Navigation Links */
+.navbar-non-home ul li a {
+    /*margin-left: -5px;*/
+    text-decoration: none;
+    color: #6A6A6A;
+    font-size: 27px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
+}
+.navbar-title {
+    text-align: center;
+    color: #6A6A6A;
+    font-size: 62px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
+    padding: 70px;
+}
+
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #003B5C;
+    color: white;
+    padding: 60px;
+    margin: 40px auto;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    max-width: 30%;
+}
+
+.contact-info h2 {
+    font-size: 52px;
+    margin-bottom: 10px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+.contact-info p {
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+/* Contact Form */
+.contact-form-container {
+    flex: 1;
+    max-width: 30%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #F0FAFB;
+    color: #6A6A6A;
+}
+
+/* Send Button */
+.contact-form button {
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #F0FAFB;
+    color: #6A6A6A;
+    border: none;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-left: 70%;
+}
+
+.contact-form button:hover {
+    background-color: #777;
+    color: black;
+}
+
+/*About Section*/
+/* Team Section */
+.team-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to new rows */
+    justify-content: center; /* Centers the items */
+    gap: 5px;
+    padding: 40px;
+    width: 80%;
+    margin: 3% auto 20% auto;
+}
+
+/* Team Member Card */
+.team-member {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px; /* Fixed width for consistency */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Placeholder for images (Using a div block) */
+.image-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #D9D9D9; /* Gray box instead of an image */
+    border-radius: 16px;
+}
+
+/* Name Styling */
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    color: #555555;
+    font-weight: 500;
+}
+
+/* Role Styling */
+.team-member p {
+    color: #555555;
+    font-size: 23px;
+    font-weight: 500;
+}
+
 
 
 
