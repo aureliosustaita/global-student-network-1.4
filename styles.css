@@ -449,6 +449,17 @@ footer {
     max-width: 40%; /* Keeps balanced size on larger screens */
     text-align: left;
 }
+.contact-info h2 {
+    font-size: 52px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+.contact-info p {
+    font-size: 28px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
 
 /* Contact Form */
 .contact-form-container {
