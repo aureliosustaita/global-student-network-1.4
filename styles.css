@@ -463,6 +463,8 @@ footer {
 
 /* Contact Form Styling */
 .contact-form {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -519,8 +521,6 @@ footer {
         max-width: 100%; /* Allows form to expand */
     }
 }
-
-
 
 /*About Section*/
 /* Team Section */
