@@ -547,9 +547,12 @@ footer {
 
     }
 
-    .social-icon, .login-icon {
+    .social-icon {
         width: 40px;
         height: 40px;
+    }
+    .login-icon {
+        width: 100px;
     }
 
     .content-overlay {
