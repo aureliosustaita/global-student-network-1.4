@@ -349,57 +349,129 @@ footer {
 }
 
 /* Contact Section */
+/*.contact-container {*/
+/*    display: flex;*/
+/*    justify-content: space-evenly;*/
+/*    align-items: center;*/
+/*    background-color: #003B5C;*/
+/*    color: white;*/
+/*    padding: 60px;*/
+/*    margin: 40px auto;*/
+/*    height: 100vh;*/
+/*    width: 100%;*/
+/*}*/
+
+/*!* Contact Info *!*/
+/*.contact-info {*/
+/*    flex: 1;*/
+/*    max-width: 30%;*/
+/*}*/
+
+/*.contact-info h2 {*/
+/*    font-size: 52px;*/
+/*    margin-bottom: 10px;*/
+/*    font-family: 'EB Garamond', serif;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.contact-info p {*/
+/*    font-size: 28px;*/
+/*    margin-bottom: 15px;*/
+/*    font-family: 'EB Garamond', serif;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*!* Contact Form *!*/
+/*.contact-form-container {*/
+/*    flex: 1;*/
+/*    max-width: 30%;*/
+/*}*/
+
+/*.contact-form {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 15px;*/
+/*    font-size: 18px;*/
+/*    font-family: 'EB Garamond', serif;*/
+/*    font-weight: 400;*/
+/*}*/
+
+/*.contact-form input,*/
+/*.contact-form textarea {*/
+/*    width: 100%;*/
+/*    padding: 10px;*/
+/*    font-size: 16px;*/
+/*    border: none;*/
+/*    border-radius: 6px;*/
+/*    background-color: #F0FAFB;*/
+/*    color: #6A6A6A;*/
+/*}*/
+
+/*!* Send Button *!*/
+/*.contact-form button {*/
+/*    width: 30%;*/
+/*    padding: 10px;*/
+/*    font-size: 18px;*/
+/*    background-color: #F0FAFB;*/
+/*    color: #6A6A6A;*/
+/*    border: none;*/
+/*    border-radius: 36px;*/
+/*    cursor: pointer;*/
+/*    transition: background 0.3s ease-in-out;*/
+/*    margin-left: 70%;*/
+/*}*/
+
+/*.contact-form button:hover {*/
+/*    background-color: #777;*/
+/*    color: black;*/
+/*}*/
+/* Contact Section */
 .contact-container {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allows items to stack on small screens */
+    justify-content: center; /* Centers content */
     align-items: center;
     background-color: #003B5C;
     color: white;
     padding: 60px;
     margin: 40px auto;
-    height: 100vh;
-    width: 100%;
+    height: auto; /* Remove fixed height */
+    width: 80%;
+    border-radius: 10px;
+    gap: 40px; /* Adds spacing between sections */
 }
 
 /* Contact Info */
 .contact-info {
     flex: 1;
-    max-width: 30%;
-}
-
-.contact-info h2 {
-    font-size: 52px;
-    margin-bottom: 10px;
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-}
-
-.contact-info p {
-    font-size: 28px;
-    margin-bottom: 15px;
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
+    min-width: 300px; /* Prevents text from being too squished */
+    max-width: 40%;
+    text-align: left;
 }
 
 /* Contact Form */
 .contact-form-container {
     flex: 1;
-    max-width: 30%;
+    min-width: 300px; /* Ensures form doesn't shrink too much */
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-form {
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     gap: 15px;
-    font-size: 18px;
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
 }
 
+/* Inputs */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     font-size: 16px;
     border: none;
     border-radius: 6px;
@@ -409,7 +481,7 @@ footer {
 
 /* Send Button */
 .contact-form button {
-    width: 30%;
+    width: 100%; /* Make button fit the form width */
     padding: 10px;
     font-size: 18px;
     background-color: #F0FAFB;
@@ -418,13 +490,32 @@ footer {
     border-radius: 36px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
-    margin-left: 70%;
 }
 
 .contact-form button:hover {
     background-color: #777;
     color: black;
 }
+
+/* 📱 Media Query to Stack on Small Screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column; /* Stacks items */
+        text-align: center;
+        width: 90%; /* Makes it fill more space on mobile */
+    }
+
+    .contact-info,
+    .contact-form-container {
+        max-width: 100%; /* Takes full width */
+        text-align: center;
+    }
+
+    .contact-form {
+        max-width: 100%; /* Allows form to expand */
+    }
+}
+
 
 /*About Section*/
 /* Team Section */
