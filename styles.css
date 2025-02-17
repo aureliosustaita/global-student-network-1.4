@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+:root {
+    --primary-color: color(display-p3 0.0 0.3 0.7); /* Wide gamut blue */
+    --secondary-color: color(display-p3 0.94 0.98 0.98); /* Light cyan */
+    --text-color: color(display-p3 0.4 0.4 0.4); /* Neutral gray */
+    --font-heading: 'EB Garamond', serif;
+    --font-body: 'Newsreader', serif;
+}
 /* Reset Default Margins & Padding */
 * {
     margin: 0;
@@ -21,7 +28,7 @@ body {
 .container {
     width: 100vw; /* Ensures full width */
     max-width: 100%;
-    background-color: #F0FAFB;
+    background-color: var(--secondary-color, white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +82,9 @@ body {
 }
 .social-icon:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    transition: transform 0.3s ease-in-out;
+    background-color: color-mix(in srgb, var(--primary-color) 80%, white);
 }
 .login-icon {
     width: 100px;
@@ -84,6 +94,7 @@ body {
 .login-icon:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
 }
+
 /* Centered Hero Text */
 .hero-text {
     position: absolute;
@@ -102,6 +113,36 @@ body {
     color: #3370F6;
 }
 
+/*.navbar {*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    width: 100vw;*/
+/*    min-height: 13vh; !* Fixed height *!*/
+/*    background-color: #F0FAFB;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*!* Navigation List *!*/
+/*.navbar ul {*/
+/*    display: flex;*/
+/*    list-style: none;*/
+/*    width: 100%;*/
+/*    justify-content: space-evenly;*/
+/*}*/
+/*!* Navigation Links *!*/
+/*.navbar ul li a {*/
+/*    margin-left: 10px;*/
+/*    text-decoration: none;*/
+/*    font-size: 27px;*/
+/*    font-weight: 400;*/
+/*    font-family: 'Newsreader', serif;*/
+/*    color: var(--text-color, black); !* Fallback: black *!*/
+/*}*/
+/*.navbar:has(a.active) {*/
+/*    background-color: var(--primary-color);*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*}*/
 .navbar {
     position: sticky;
     top: 0;
@@ -111,22 +152,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* Navigation List */
-.navbar ul {
-    display: flex;
-    list-style: none;
-    width: 100%;
-    justify-content: space-evenly;
-}
-/* Navigation Links */
-.navbar ul li a {
-    margin-left: 10px;
-    text-decoration: none;
-    color: #6A6A6A;
-    font-size: 27px;
-    font-weight: 400;
-    font-family: 'Newsreader', serif;
+    ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: space-evenly;
+
+        li {
+            a {
+                margin-left: 10px;
+                text-decoration: none;
+                font-size: 27px;
+                font-weight: 400;
+                font-family: 'Newsreader', serif;
+                color: var(--text-color, black); /* Fallback: black */
+            }
+        }
+    }
+    &:has(a.active) {
+        background-color: var(--primary-color);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 #mission {
     color: #003B5C;
@@ -207,7 +253,18 @@ footer {
     align-items: center;
     margin: 15% auto;
 }
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .animated-container h1 {
+    animation: slideIn 1s ease-out; /* Runs when page loads */
     text-align: center;
     font-size: 62px;
     font-family: 'EB Garamond', serif;
@@ -216,6 +273,7 @@ footer {
     margin-bottom: 3%
 }
 .animated-container h2 {
+    animation: slideIn 1s ease-out; /* Runs when page loads */
     text-align: center;
     font-size: 48px;
     font-family: 'EB Garamond', serif;
@@ -335,7 +393,7 @@ footer {
 .navbar-non-home ul li a {
     /*margin-left: -5px;*/
     text-decoration: none;
-    color: #6A6A6A;
+    color: var(--text-color, black); /* Fallback: black */
     font-size: 27px;
     font-weight: 400;
     font-family: 'Newsreader', serif;
