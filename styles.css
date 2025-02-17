@@ -426,39 +426,42 @@ footer {
 /*    color: black;*/
 /*}*/
 /* Contact Section */
+/* Contact Section */
 .contact-container {
     display: flex;
-    flex-wrap: wrap; /* Allows items to stack on small screens */
-    justify-content: center; /* Centers content */
+    flex-wrap: wrap; /* Ensures items wrap when needed */
+    justify-content: center; /* Centers items */
     align-items: center;
     background-color: #003B5C;
     color: white;
     padding: 60px;
     margin: 40px auto;
-    height: auto; /* Remove fixed height */
     width: 80%;
+    max-width: 1200px; /* Prevents it from being too wide on big screens */
     border-radius: 10px;
-    gap: 40px; /* Adds spacing between sections */
+    gap: 40px; /* Adds spacing */
 }
 
 /* Contact Info */
 .contact-info {
     flex: 1;
-    min-width: 300px; /* Prevents text from being too squished */
-    max-width: 40%;
+    min-width: 300px; /* Prevents it from getting too small */
+    max-width: 40%; /* Keeps balanced size on larger screens */
     text-align: left;
 }
 
 /* Contact Form */
 .contact-form-container {
     flex: 1;
-    min-width: 300px; /* Ensures form doesn't shrink too much */
+    min-width: 300px; /* Prevents the form from shrinking too much */
     max-width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
+/* Contact Form Styling */
 .contact-form {
     width: 100%;
     max-width: 400px;
@@ -467,7 +470,7 @@ footer {
     gap: 15px;
 }
 
-/* Inputs */
+/* Input Fields */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -481,8 +484,8 @@ footer {
 
 /* Send Button */
 .contact-form button {
-    width: 100%; /* Make button fit the form width */
-    padding: 10px;
+    width: 100%; /* Make button fit form width */
+    padding: 12px;
     font-size: 18px;
     background-color: #F0FAFB;
     color: #6A6A6A;
@@ -497,17 +500,18 @@ footer {
     color: black;
 }
 
-/* 📱 Media Query to Stack on Small Screens */
+/* 📱 Mobile Fix: Ensure Stacking on Small Screens */
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column; /* Stacks items */
         text-align: center;
-        width: 90%; /* Makes it fill more space on mobile */
+        width: 90%; /* Expands slightly for smaller screens */
+        padding: 40px 20px; /* Adjust padding */
     }
 
     .contact-info,
     .contact-form-container {
-        max-width: 100%; /* Takes full width */
+        max-width: 100%; /* Take full width */
         text-align: center;
     }
 
@@ -515,6 +519,7 @@ footer {
         max-width: 100%; /* Allows form to expand */
     }
 }
+
 
 
 /*About Section*/
