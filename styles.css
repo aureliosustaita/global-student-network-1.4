@@ -39,7 +39,7 @@ body {
 .image-background {
     width: 98%; /* Full screen width */
     min-height: 87vh; /* Keeps height relative */
-    background-image: url('background.jpg'); /* Replace with actual image */
+    background-image: url('media/background.jpg'); /* Replace with actual image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
