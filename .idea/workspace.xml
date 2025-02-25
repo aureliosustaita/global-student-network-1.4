@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="created media directory to hold all images&#10;deleted unnecessary html files">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="re implemented images into the code to adapt to the new media directory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/login-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/login.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <workItem from="1739652577166" duration="51754000" />
       <workItem from="1740114657449" duration="609000" />
       <workItem from="1740460770252" duration="1640000" />
-      <workItem from="1740465960287" duration="800000" />
+      <workItem from="1740465960287" duration="1625000" />
     </task>
     <task id="LOCAL-00001" summary="-setting title">
       <option name="closed" value="true" />
@@ -477,7 +472,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740466489232</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="re implemented images into the code to adapt to the new media directory">
+      <option name="closed" value="true" />
+      <created>1740466804531</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1740466804531</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -512,6 +515,7 @@
     <MESSAGE value="added about page" />
     <MESSAGE value="adapting to mobile" />
     <MESSAGE value="created media directory to hold all images&#10;deleted unnecessary html files" />
-    <option name="LAST_COMMIT_MESSAGE" value="created media directory to hold all images&#10;deleted unnecessary html files" />
+    <MESSAGE value="re implemented images into the code to adapt to the new media directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="re implemented images into the code to adapt to the new media directory" />
   </component>
 </project>
