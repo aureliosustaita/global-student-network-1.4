@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="re implemented images into the code to adapt to the new media directory">
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="revamping html form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +30,12 @@
     &quot;assignee&quot;: &quot;aureliosustaita&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/aureliosustaita/global-student-network-1.3.git",
-    "accountId": "a7c7a920-8f92-43db-9521-513e53cef75e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aureliosustaita/global-student-network-1.3.git&quot;,
+    &quot;accountId&quot;: &quot;a7c7a920-8f92-43db-9521-513e53cef75e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -48,23 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.index.html.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/aure361/WebstormProjects/global-student-network-1.3/media",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/aure361/WebstormProjects/global-student-network-1.3/media&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/media" />
@@ -102,7 +101,9 @@
       <workItem from="1739652577166" duration="51754000" />
       <workItem from="1740114657449" duration="609000" />
       <workItem from="1740460770252" duration="1640000" />
-      <workItem from="1740465960287" duration="1625000" />
+      <workItem from="1740465960287" duration="1805000" />
+      <workItem from="1740501517459" duration="5902000" />
+      <workItem from="1740599146221" duration="3981000" />
     </task>
     <task id="LOCAL-00001" summary="-setting title">
       <option name="closed" value="true" />
@@ -480,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740466804531</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="revamping html form">
+      <option name="closed" value="true" />
+      <created>1740467731966</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1740467731966</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,6 +525,7 @@
     <MESSAGE value="adapting to mobile" />
     <MESSAGE value="created media directory to hold all images&#10;deleted unnecessary html files" />
     <MESSAGE value="re implemented images into the code to adapt to the new media directory" />
-    <option name="LAST_COMMIT_MESSAGE" value="re implemented images into the code to adapt to the new media directory" />
+    <MESSAGE value="revamping html form" />
+    <option name="LAST_COMMIT_MESSAGE" value="revamping html form" />
   </component>
 </project>

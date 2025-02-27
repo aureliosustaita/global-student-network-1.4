@@ -30,34 +30,17 @@
 
     <div class="contact-form-container">
         <img src="media/gsn_logo.svg" alt="Global Student Network Logo" class="logo"> <!-- Logo Added -->
-        <form class="contact-form">
-            <label>
-                <input type="text" placeholder="Your Name" required>
-            </label>
-            <label>
-                <input type="email" placeholder="Your Email" required>
-            </label>
-            <label>
-                <input type="text" placeholder="Subject" required>
-            </label>
-            <label>
-                <textarea placeholder="Your Message" rows="10" required></textarea>
-            </label>
+        <form action="https://httpbin.org/post" method="post" class="contact-form">
+            <input type="hidden" name="possible_bot" value="true">
+
+            <input type="text" name="name" placeholder="Your Name*" aria-label="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email*" aria-label="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject*" aria-label="Subject" required>
+            <textarea name="message" placeholder="Your Message*" aria-label="Your Message" rows="10" required></textarea>
             <button type="submit">Send</button>
         </form>
-        <form action="" method="get" class="contact-form">
-            <div class="form-example">
-                <label for="name">Enter your name: </label>
-                <input type="text" name="name" id="name" required />
-            </div>
-            <div class="form-example">
-                <label for="email">Enter your email: </label>
-                <input type="email" name="email" id="email" required />
-            </div>
-            <div class="form-example">
-                <input type="submit" value="submit" />
-            </div>
-        </form>
+
+
 
     </div>
 </section>
