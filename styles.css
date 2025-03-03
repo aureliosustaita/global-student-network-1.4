@@ -6,6 +6,10 @@
     --text-color: color(display-p3 0.4 0.4 0.4); /* Neutral gray */
     --font-heading: 'EB Garamond', serif;
     --font-body: 'Newsreader', serif;
+    --background-color: #FFFFFF; /* Light mode: white */
+}
+[data-theme="dark"] {
+    --background-color: black;   /* Dark mode: black */
 }
 /* Reset Default Margins & Padding */
 * {
@@ -18,7 +22,11 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Times New Roman', serif;
-    background-color: #FFFFFF;
+
+    /*background-color: #FFFFFF;*/
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -717,12 +725,17 @@ footer {
 .error.fade-out {
     opacity: 0;
 }
-.count {
-    font-size: 0.8em;
-    margin-top: -5px;
-    color: #555;  /* Default text color */
+:root {
+    --background-color: #FFFFFF; /* Light mode: white */
 }
-
+[data-theme="dark"] {
+    --background-color: black;   /* Dark mode: black */
+}
+body {
+    /*background-color: #FFFFFF;*/
+    background-color: var(--background-color);
+    transition: background-color 0.3s;
+}
 
 
 
