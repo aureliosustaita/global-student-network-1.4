@@ -29,18 +29,29 @@
     </div>
 
     <div class="contact-form-container">
-        <img src="media/gsn_logo.svg" alt="Global Student Network Logo" class="logo"> <!-- Logo Added -->
+        <img src="media/gsn_logo.svg" alt="Global Student Network Logo" class="logo">
         <form action="https://httpbin.org/post" method="post" class="contact-form">
             <input type="hidden" name="possible_bot" value="true">
+            <input type="hidden" name="form-errors" id="form-errors">
 
-            <input type="text" name="name" placeholder="Your Name*" aria-label="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email*" aria-label="Your Email" required>
-            <input type="text" name="subject" placeholder="Subject*" aria-label="Subject" required>
-            <textarea name="message" placeholder="Your Message*" aria-label="Your Message" rows="10" required></textarea>
+            <input id="name" type="text" name="name" placeholder="Your Name*" aria-label="Your Name" maxlength="30" required>
+            <output id="name-count" class="count">30 characters remaining</output>
+            <output id="name-error" class="error"></output>
+
+            <input id="email" type="email" name="email" placeholder="Your Email*" aria-label="Your Email" required>
+            <output id="email-error" class="error"></output>
+
+            <input id="subject" type="text" name="subject" placeholder="Subject*" aria-label="Subject" maxlength="30" required>
+            <output id="subject-count" class="count">30 characters remaining</output>
+            <output id="subject-error" class="error"></output>
+
+            <textarea id="message" name="message" placeholder="Your Message*" aria-label="Your Message" rows="10" maxlength="400" required></textarea>
+            <output id="message-count" class="count">400 characters remaining</output>
+            <output id="message-error" class="error"></output>
+
+
             <button type="submit">Send</button>
         </form>
-
-
 
     </div>
 </section>
@@ -51,6 +62,7 @@
 <noscript>
     <h2>Error: We have a bias towards assuming JavaScript is enabled!</h2>
 </noscript>
+<script src="script.js"></script>
 </body>
 </html>
 

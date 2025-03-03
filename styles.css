@@ -687,7 +687,41 @@ footer {
     font-size: 23px;
     font-weight: 500;
 }
+#name:user-invalid {
+    border: 2px solid red;
+}
+#email:user-invalid {
+    border: 2px solid red;
+}
+#subject:user-invalid {
+    border: 2px solid red;
+}
+#message:user-invalid {
+    border: 2px solid red;
+}
+/* Error message styling */
+.error {
+    color: #ff4d4f;
+    margin-top: -5px;
+    font-size: 0.9em;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
 
+/* Invalid field border color */
+.invalid {
+    border: 2px solid red;
+}
+
+/* Smooth fade-out for error messages */
+.error.fade-out {
+    opacity: 0;
+}
+.count {
+    font-size: 0.8em;
+    margin-top: -5px;
+    color: #555;  /* Default text color */
+}
 
 
 
