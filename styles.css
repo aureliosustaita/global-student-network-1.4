@@ -1,16 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
 :root {
     --primary-color: color(display-p3 0.0 0.3 0.7); /* Wide gamut blue */
     --secondary-color: color(display-p3 0.94 0.98 0.98); /* Light cyan */
     --text-color: color(display-p3 0.4 0.4 0.4); /* Neutral gray */
     --font-heading: 'EB Garamond', serif;
     --font-body: 'Newsreader', serif;
+
+
     --background-color: #FFFFFF; /* Light mode: white */
+    --navbar-font-color: #6A6A6A;
+    --header: #003B5C;
+    --EB-Garamond-color: #555555;
 }
 [data-theme="dark"] {
     --background-color: black;   /* Dark mode: black */
 }
+
 /* Reset Default Margins & Padding */
 * {
     margin: 0;
@@ -18,19 +25,19 @@
     box-sizing: border-box;
 }
 body {
+    transition: background-color 0.3s;
     overflow-x: hidden; /* Removes side scroll */
     width: 100%;
     height: 100%;
     font-family: 'Times New Roman', serif;
-
-    /*background-color: #FFFFFF;*/
-    background-color: var(--background-color);
-    transition: background-color 0.3s;
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column; /* Ensure stacking */
+
+
+    /*background-color: #FFFFFF;*/
+    background-color: var(--background-color);
 }
 /* Main container */
 .container {
@@ -73,7 +80,6 @@ body {
     align-items: center;
     gap: 25px; /* Adds spacing between Instagram and login */
     cursor: pointer; /* Makes it look clickable */
-    transition: all 0.3s ease-in-out; /* Smooth animation */
 }
 /* Logo */
 .logo {
@@ -101,6 +107,9 @@ body {
 }
 .login-icon:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    transition: transform 0.3s ease-in-out;
+    background-color: color-mix(in srgb, var(--primary-color) 80%, white);
 }
 
 /* Centered Hero Text */
@@ -386,84 +395,6 @@ footer {
 }
 
 /* Contact Section */
-/*.contact-container {*/
-/*    display: flex;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*    background-color: #003B5C;*/
-/*    color: white;*/
-/*    padding: 60px;*/
-/*    margin: 40px auto;*/
-/*    height: 100vh;*/
-/*    width: 100%;*/
-/*}*/
-
-/*!* Contact Info *!*/
-/*.contact-info {*/
-/*    flex: 1;*/
-/*    max-width: 30%;*/
-/*}*/
-
-/*.contact-info h2 {*/
-/*    font-size: 52px;*/
-/*    margin-bottom: 10px;*/
-/*    font-family: 'EB Garamond', serif;*/
-/*    font-weight: 400;*/
-/*}*/
-
-/*.contact-info p {*/
-/*    font-size: 28px;*/
-/*    margin-bottom: 15px;*/
-/*    font-family: 'EB Garamond', serif;*/
-/*    font-weight: 400;*/
-/*}*/
-
-/*!* Contact Form *!*/
-/*.contact-form-container {*/
-/*    flex: 1;*/
-/*    max-width: 30%;*/
-/*}*/
-
-/*.contact-form {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    gap: 15px;*/
-/*    font-size: 18px;*/
-/*    font-family: 'EB Garamond', serif;*/
-/*    font-weight: 400;*/
-/*}*/
-
-/*.contact-form input,*/
-/*.contact-form textarea {*/
-/*    width: 100%;*/
-/*    padding: 10px;*/
-/*    font-size: 16px;*/
-/*    border: none;*/
-/*    border-radius: 6px;*/
-/*    background-color: #F0FAFB;*/
-/*    color: #6A6A6A;*/
-/*}*/
-
-/*!* Send Button *!*/
-/*.contact-form button {*/
-/*    width: 30%;*/
-/*    padding: 10px;*/
-/*    font-size: 18px;*/
-/*    background-color: #F0FAFB;*/
-/*    color: #6A6A6A;*/
-/*    border: none;*/
-/*    border-radius: 36px;*/
-/*    cursor: pointer;*/
-/*    transition: background 0.3s ease-in-out;*/
-/*    margin-left: 70%;*/
-/*}*/
-
-/*.contact-form button:hover {*/
-/*    background-color: #777;*/
-/*    color: black;*/
-/*}*/
-/* Contact Section */
-/* Contact Section */
 .contact-container {
     display: flex;
     flex-wrap: wrap; /* Ensures items wrap when needed */
@@ -724,17 +655,6 @@ footer {
 /* Smooth fade-out for error messages */
 .error.fade-out {
     opacity: 0;
-}
-:root {
-    --background-color: #FFFFFF; /* Light mode: white */
-}
-[data-theme="dark"] {
-    --background-color: black;   /* Dark mode: black */
-}
-body {
-    /*background-color: #FFFFFF;*/
-    background-color: var(--background-color);
-    transition: background-color 0.3s;
 }
 
 
