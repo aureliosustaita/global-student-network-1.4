@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="Add new color variables to :root for better theme management&#10;Improve hover effects for social and login icons&#10;Enhance navbar with new active state styling and color variables">
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="Move &lt;noscript&gt; tags to the top of &lt;body&gt; for better user feedback and accessibility">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,15 +113,7 @@
       <workItem from="1740599146221" duration="7291000" />
       <workItem from="1740683662820" duration="21870000" />
       <workItem from="1741067279067" duration="1651000" />
-      <workItem from="1741132888425" duration="2492000" />
-    </task>
-    <task id="LOCAL-00004" summary="-index">
-      <option name="closed" value="true" />
-      <created>1738526814934</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1738526814934</updated>
+      <workItem from="1741132888425" duration="3495000" />
     </task>
     <task id="LOCAL-00005" summary="-index">
       <option name="closed" value="true" />
@@ -506,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741135111913</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Move &lt;noscript&gt; tags to the top of &lt;body&gt; for better user feedback and accessibility">
+      <option name="closed" value="true" />
+      <created>1741135439290</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1741135439290</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,6 +546,7 @@
     <MESSAGE value="revamping html form" />
     <MESSAGE value="simplified message of no javascript" />
     <MESSAGE value="Add new color variables to :root for better theme management&#10;Improve hover effects for social and login icons&#10;Enhance navbar with new active state styling and color variables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new color variables to :root for better theme management&#10;Improve hover effects for social and login icons&#10;Enhance navbar with new active state styling and color variables" />
+    <MESSAGE value="Move &lt;noscript&gt; tags to the top of &lt;body&gt; for better user feedback and accessibility" />
+    <option name="LAST_COMMIT_MESSAGE" value="Move &lt;noscript&gt; tags to the top of &lt;body&gt; for better user feedback and accessibility" />
   </component>
 </project>

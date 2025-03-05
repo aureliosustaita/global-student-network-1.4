@@ -87,6 +87,9 @@ body {
     height: 50px;
     margin-bottom: 25px;
 }
+.logo:hover {
+    cursor: pointer;
+}
 /* Instagram Icon */
 .social-icon {
     width: 56px;
