@@ -5,8 +5,8 @@
     --font-newsreader: 'Newsreader', serif;
     --font-eb-garamond: 'EB Garamond', serif;
     --background-color: #FFFFFF;
-    --navbar--color: #6A6A6A;
-    --footer--color: #6A6A6A;
+    --navbar-color: #6A6A6A;
+    --footer-color: #6A6A6A;
     /*index page*/
     --index-background-color: #F0FAFB;
     --home-color-1: #003B5C;
@@ -22,36 +22,10 @@
     /*login page*/
     --login-color-1: #000000;
     --login-background-color: #D9D9D9;
-
-
-    --primary-color: color(display-p3 0.0 0.3 0.7); /* Wide gamut blue */
-    --secondary-color: color(display-p3 0.94 0.98 0.98); /* Light cyan */
-    --text-color: color(display-p3 0.4 0.4 0.4); /* Neutral gray */
-    --font-heading: 'EB Garamond', serif;
-    --font-body: 'Newsreader', serif;
-/*contact.html*/
-/*navbar/title font newsreader + 6A6A6A*/
-/*footer newsreader + 6A6A6A*/
-/*info message of lets connect eb garamound + #FFFFFF*/
-/*input fields/buttons  text eb garamound + #6A6A6A*/
-/*input fields/buttons background: #F0FAFB*/
-
-
-/*about.html*/
-/*navbar/title font newsreader + 6A6A6A*/
-/*name eb garamound + #173D46*/
-/*title eb garamound + #555555*/
-/*footer newsreader + 6A6A6A*/
-
-/*login.html*/
-/*inputs/buttons  #000000*/
-/*text newsreader + 000000*/
-
 }
 [data-theme="dark"] {
     --background-color: #181818;   /* Dark mode: black */
 }
-
 /* Reset Default Margins & Padding */
 * {
     margin: 0;
@@ -59,7 +33,6 @@
     box-sizing: border-box;
 }
 body {
-    transition: background-color 0.3s;
     overflow-x: hidden; /* Removes side scroll */
     width: 100%;
     height: 100%;
