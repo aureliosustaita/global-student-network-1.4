@@ -2,20 +2,54 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
 
 :root {
+    --font-newsreader: 'Newsreader', serif;
+    --font-eb-garamond: 'EB Garamond', serif;
+    --background-color: #FFFFFF;
+    --navbar--color: #6A6A6A;
+    --footer--color: #6A6A6A;
+    /*index page*/
+    --index-background-color: #F0FAFB;
+    --home-color-1: #003B5C;
+    --home-color-2: #555555;
+    --home-color-3: #FFFFFF;
+    /*contact page*/
+    --contact-color-1: #FFFFFF;
+    --contact-color-2: #6A6A6A;
+    --contact-background-color: #F0FAFB;
+    /*about page*/
+    --about-color-1: #003B5C;
+    --about-color-2: #555555;
+    /*login page*/
+    --login-color-1: #000000;
+    --login-background-color: #D9D9D9;
+
+
     --primary-color: color(display-p3 0.0 0.3 0.7); /* Wide gamut blue */
     --secondary-color: color(display-p3 0.94 0.98 0.98); /* Light cyan */
     --text-color: color(display-p3 0.4 0.4 0.4); /* Neutral gray */
     --font-heading: 'EB Garamond', serif;
     --font-body: 'Newsreader', serif;
+/*contact.html*/
+/*navbar/title font newsreader + 6A6A6A*/
+/*footer newsreader + 6A6A6A*/
+/*info message of lets connect eb garamound + #FFFFFF*/
+/*input fields/buttons  text eb garamound + #6A6A6A*/
+/*input fields/buttons background: #F0FAFB*/
 
 
-    --background-color: #FFFFFF; /* Light mode: white */
-    --navbar-font-color: #6A6A6A;
-    --header: #003B5C;
-    --EB-Garamond-color: #555555;
+/*about.html*/
+/*navbar/title font newsreader + 6A6A6A*/
+/*name eb garamound + #173D46*/
+/*title eb garamound + #555555*/
+/*footer newsreader + 6A6A6A*/
+
+/*login.html*/
+/*inputs/buttons  #000000*/
+/*text newsreader + 000000*/
+
 }
 [data-theme="dark"] {
-    --background-color: black;   /* Dark mode: black */
+    --background-color: #181818;   /* Dark mode: black */
 }
 
 /* Reset Default Margins & Padding */
