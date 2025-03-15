@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="revamped dark mode for all pages">
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="part 3:&#10;-revamping css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/background-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/background-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic1-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graphic1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/media/graphic1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon1-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/icon1-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon2-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/icon2-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/icon1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/icon2.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +83,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/media" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/media" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -110,23 +125,9 @@
       <workItem from="1740683662820" duration="21870000" />
       <workItem from="1741067279067" duration="1651000" />
       <workItem from="1741132888425" duration="4230000" />
-      <workItem from="1741219502370" duration="3071000" />
-    </task>
-    <task id="LOCAL-00007" summary="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html">
-      <option name="closed" value="true" />
-      <created>1738565566549</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1738565566549</updated>
-    </task>
-    <task id="LOCAL-00008" summary="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html">
-      <option name="closed" value="true" />
-      <created>1738566331310</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1738566331310</updated>
+      <workItem from="1741219502370" duration="5524000" />
+      <workItem from="1741392232864" duration="4705000" />
+      <workItem from="1741572308294" duration="34658000" />
     </task>
     <task id="LOCAL-00009" summary="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html">
       <option name="closed" value="true" />
@@ -504,7 +505,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741220113171</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="revamping root elements">
+      <option name="closed" value="true" />
+      <created>1741222601983</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1741222601983</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Making css file more readable and simplifying it">
+      <option name="closed" value="true" />
+      <created>1741222793700</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1741222793700</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-setting title" />
     <MESSAGE value="-index" />
     <MESSAGE value="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html" />
     <MESSAGE value="+favicon" />
@@ -546,6 +562,8 @@
     <MESSAGE value="Move &lt;noscript&gt; tags to the top of &lt;body&gt; for better user feedback and accessibility" />
     <MESSAGE value="Removed theme switcher button and made global student network logo into the theme light switcher" />
     <MESSAGE value="revamped dark mode for all pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="revamped dark mode for all pages" />
+    <MESSAGE value="revamping root elements" />
+    <MESSAGE value="Making css file more readable and simplifying it" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making css file more readable and simplifying it" />
   </component>
 </project>

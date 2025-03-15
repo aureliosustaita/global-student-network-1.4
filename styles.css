@@ -2,241 +2,194 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
 
 :root {
-    --font-newsreader: 'Newsreader', serif;
-    --font-eb-garamond: 'EB Garamond', serif;
     --background-color: #FFFFFF;
-    --navbar-color: #6A6A6A;
-    --footer-color: #6A6A6A;
+    --navbar-text-color: #6A6A6A;
+    --footer-text-color: #6A6A6A;
+    --logo-animation-color: color(display-p3 0.0 0.3 0.7);
     /*index page*/
-    --index-background-color: #F0FAFB;
-    --home-color-1: #003B5C;
-    --home-color-2: #555555;
-    --home-color-3: #FFFFFF;
+    --index-hero-text-color: #3370F6;
+    --index-navbar-color: #DAEBFE;
+    --index-section1-color1: #2874AE;
+    --index-section1-color2: #555555;
+    --index-section1-graphic-color: #FEDEDA;
+    --index-section2-color1: #FFFFFF;
+    --index-section2-background: #2874AE;
+    --index-section3-color1: #555555;
+    --index-section4-color1: #555555;
+    --index-section4-background: #DAEBFE;
+
+    --non-index-navbar-color: #FFFFFF;
+    --non-index-navbar-text-color: #6A6A6A;
     /*contact page*/
-    --contact-color-1: #FFFFFF;
-    --contact-color-2: #6A6A6A;
-    --contact-background-color: #F0FAFB;
+    --contact-color1: #FFFFFF;
+    --contact-form-input: #DAEBFE; /*form input*/
+    --contact-form-text: #6A6A6A; /*form text*/
+    --contact-background: #2874AE;
     /*about page*/
-    --about-color-1: #003B5C;
-    --about-color-2: #555555;
-    /*login page*/
-    --login-color-1: #000000;
-    --login-background-color: #D9D9D9;
+    --about-color1: #2874AE;
+    --about-color2: #555555;
+    /*!*login page*!*/
+    --login-text-color: #000000;
+    --login-input-color: #D9D9D9
 }
 [data-theme="dark"] {
-    --background-color: #181818;   /* Dark mode: black */
+    --background-color: #181818;
 }
-/* Reset Default Margins & Padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    overflow-x: hidden; /* Removes side scroll */
-    width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-color);
     font-family: 'Times New Roman', serif;
+    align-items: flex-start;
+}
+/* index page */
+.container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column; /* Ensure stacking */
-
-
-    /*background-color: #FFFFFF;*/
-    background-color: var(--background-color);
+    width: 100%;
+    height: 90vh;
+    background-color: var(--index-navbar-color);
 }
-/* Main container */
-.container {
-    width: 100vw; /* Ensures full width */
-    max-width: 100%;
-    background-color: var(--secondary-color, white);
+.image-background {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    flex-grow: 1;
-}
-
-/* Background Image */
-.image-background {
-    width: 98%; /* Full screen width */
-    min-height: 87vh; /* Keeps height relative */
-    background-image: url('media/background.jpg'); /* Replace with actual image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+    width: 98%;
+    height: 100%;
+    background-image: url('media/background-2.png');
     border-radius: 0 0 24px 24px;
-    flex-shrink: 0;
+    background-size: cover;
 }
-.content-overlay {
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between; /* Ensures left & right icons are spaced */
-    align-items: center;
-    padding-top: 0;
-    padding-left: 60px;
-    padding-right: 60px;
-}
-/* New container for Instagram & Login icons */
-.right-icons {
-    display: flex;
-    align-items: center;
-    gap: 25px; /* Adds spacing between Instagram and login */
-    cursor: pointer; /* Makes it look clickable */
-}
-/* Logo */
-.logo {
-    width: 175px;
-    height: 50px;
-    margin-bottom: 25px;
-}
-.logo:hover {
-    cursor: pointer;
-}
-/* Instagram Icon */
-.social-icon {
-    width: 56px;
-    height: 56px;
-    margin-top: 3px;
-    border-radius: 45%;
-}
-.social-icon:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
-    transform: scale(1.1); /* Slightly enlarges the icon */
-    transition: transform 0.3s ease-in-out;
-    background-color: color-mix(in srgb, var(--primary-color) 80%, white);
-}
-.login-icon {
-    width: 100px;
-    height: 56px;
-    border-radius: 22px;
-}
-.login-icon:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
-    transform: scale(1.1); /* Slightly enlarges the icon */
-    transition: transform 0.3s ease-in-out;
-    background-color: color-mix(in srgb, var(--primary-color) 80%, white);
-}
-
-/* Centered Hero Text */
 .hero-text {
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
     text-align: center;
     color: white;
     font-size: 64px;
     font-weight: 400;
     font-family: 'Newsreader', serif;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
-
 .hero-text span {
-    color: #3370F6;
+    color: var(--index-hero-text-color);
 }
-
+.content-overlay {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.right-icons {
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.logo {
+    /*z-index: 2;*/
+    width: 175px;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+.logo:hover {
+    cursor: pointer;
+}
+.social-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 30px;
+}
+.social-icon:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    transition: transform 0.3s ease-in-out;
+    background-color: color-mix(in srgb, var(--logo-animation-color) 80%, white);
+}
+.login-icon {
+    width: 100px;
+    height: 56px;
+    margin-left: 20px;
+    border-radius: 24px;
+}
+.login-icon:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+    transform: scale(1.1); /* Slightly enlarges the icon */
+    transition: transform 0.3s ease-in-out;
+    background-color: color-mix(in srgb, var(--logo-animation-color) 80%, white);
+}
 .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: sticky;
     top: 0;
-    width: 100vw;
-    min-height: 13vh; /* Fixed height */
-    background-color: #F0FAFB;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--index-navbar-color);
 }
-/* Navigation List */
 .navbar ul {
     display: flex;
     list-style: none;
     width: 100%;
     justify-content: space-evenly;
 }
-/* Navigation Links */
 .navbar ul li a {
-    margin-left: 10px;
+    color: var(--navbar-text-color);
+    font-family: 'Newsreader', serif;
     text-decoration: none;
     font-size: 27px;
     font-weight: 400;
-    font-family: 'Newsreader', serif;
-    color: var(--text-color, black); /* Fallback: black */
 }
-.navbar:has(a.active) {
-    background-color: var(--primary-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.container-2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 18%;
+    gap: 15vh;
 }
-
+.graphic path {
+    fill: var(--index-section1-graphic-color);
+    stroke: var(--index-section1-graphic-color);
+}
 #mission {
-    color: #003B5C;
+    color: var(--index-section1-color1);
     font-family: 'EB Garamond', serif;
     font-weight: 500;
     font-size: 64px;
     text-align: center;
-    width: 70%
+    width: 45%
 }
 #mission-statement {
-    color: #555555;
+    color: var(--index-section1-color2);
     font-family: 'EB Garamond', serif;
     font-weight: 500;
     font-size: 30px;
     text-align: center;
-    width: 70%;
-}
-.container-2 {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 5%;
-}
-.banner {
-    margin-left: 160px;
-}
-hr {
-    display: block;
-    border: none; /* Remove default border */
-    height: 1px; /* Set thickness */
-    background-color: #6A6A6A; /* Set color */
-    width: 90%;
-    margin: 0 auto; /* Auto centers block elements like <hr> */
-}
-footer {
-    text-align: center;
-    width: 100%;
-    padding: 20px; /* Adds some space around it */
-    color: #6A6A6A;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Newsreader', serif;
+    width: 45%;
 }
 .vision-container {
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100%;
-    background-color: #003B5C;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--index-section2-background);
     border-radius: 0 0 24px 24px;
 }
 #vision-statement {
-    position: relative; /* Allows layering */
-    color: #FFFFFF;
+    color: var(--index-section2-color1);
     font-size: 48px;
     font-weight: 400;
     font-family: 'Newsreader', serif;
     text-align: center;
-    align-items: center;
     min-width: 68%;
-    margin-left: 30px;
-    display: flex;
-    z-index: 3;
+    margin-left: 3%;
+    z-index: 2;
 }
 .icon-1 {
     transform: translate(120px, -150px);
@@ -247,102 +200,93 @@ footer {
     z-index: 1;
 }
 .animated-container {
-    align-items: center;
-    margin: 15% auto;
-}
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 .animated-container h1 {
-    animation: slideIn 1s ease-out; /* Runs when page loads */
     text-align: center;
     font-size: 62px;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
-    color: #555555;
-    margin-bottom: 3%
+    color: var(--index-section3-color1);
 }
 .animated-container h2 {
-    animation: slideIn 1s ease-out; /* Runs when page loads */
     text-align: center;
     font-size: 48px;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
-    color: #555555;
+    color: var(--index-section3-color1);
 }
 .president-container {
     display: flex;
     flex-direction: row;
-    font-size: 48px;
+    margin-left: 20%;
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
     font-family: 'EB Garamond', serif;
     font-weight: 500;
-    color: #555555;
-    height: 150vh;
-    margin-bottom: 35%;
+    color: var(--index-section4-color1);
 }
 .picture-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    height: 75%;
+    width: 30%;
     background-color: #D9D9D9;
     color: black;
+    border-radius: 0 0 0 24px;
 }
 .quote-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    background-color: #F0FAFB;
+    height: 75%;
+    width: 30%;
+    background-color: var(--index-section4-background);
+    border-radius: 0 0 24px 0;
 }
 .quote-box p {
+    margin-top: 16%;
+    margin-left: 12%;
     width: 80%;
 }
-
-/*login style*/
-/* Center the entire password section */
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--footer-text-color);
+    width: 90%;
+    margin: 0 auto;
+}
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    color: var(--footer-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Newsreader', serif;
+}
+/*login page*/
 .password-container {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    height: 100vh; /* Full screen height */
-    width: 100%; /* Ensures full width */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
     text-align: center;
     font-family: 'EB Garamond', serif;
-    color: #333;
+    color: var(--login-text-color);
 }
-
-/* Message above the password input */
 .password-message {
     font-size: 20px;
     margin-bottom: 20px;
     width: 100%;
-    text-align: center; /* Ensures text is centered */
+    text-align: center;
 }
-
-/* Password form layout */
-.password-form {
-    display: flex;
-    flex-direction: row; /* Ensures elements are in one line */
-    align-items: center; /* Aligns elements vertically */
-    justify-content: center; /* Ensures form is centered */
-    gap: 10px;
-}
-
-/* Label styling */
 .password-form label {
     font-size: 18px;
 }
-
-/* Input field styling */
 .password-input {
     width: 200px;
     height: 36px;
@@ -350,81 +294,79 @@ footer {
     font-size: 16px;
     border: 1px solid #999;
     border-radius: 5px;
-    background-color: #E5E5E5;
+    background-color: var(--login-input-color);
 }
-
-/* Enter button styling */
 .password-button {
     height: 36px;
     padding: 5px 15px;
     font-size: 16px;
     border: none;
-    background-color: #999;
-    color: white;
+    background-color: var(--login-input-color);
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
-
-/* Button hover effect */
 .password-button:hover {
     background-color: #777;
 }
-
+/*non home navbar*/
+header {
+    width: 100%;
+}
 .navbar-non-home {
-    width: 100vw;
-    min-height: 13vh; /* Fixed height */
-    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-color: var(--non-index-navbar-color);
 }
-/* Navigation List */
 .navbar-non-home ul {
     display: flex;
     list-style: none;
     width: 100%;
     justify-content: space-evenly;
 }
-/* Navigation Links */
 .navbar-non-home ul li a {
-    /*margin-left: -5px;*/
+    color: var(--non-index-navbar-text-color);
+    font-family: 'Newsreader', serif;
     text-decoration: none;
-    color: var(--text-color, black); /* Fallback: black */
     font-size: 27px;
     font-weight: 400;
-    font-family: 'Newsreader', serif;
 }
 .navbar-title {
     text-align: center;
-    color: #6A6A6A;
+    color: var(--non-index-navbar-text-color);
     font-size: 62px;
     font-weight: 400;
     font-family: 'Newsreader', serif;
-    padding: 70px;
+    margin-top: 5%;
+    margin-bottom: 3%;
 }
-
-/* Contact Section */
+/*contact page*/
 .contact-container {
     display: flex;
-    flex-wrap: wrap; /* Ensures items wrap when needed */
-    justify-content: center; /* Centers items */
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    background-color: #003B5C;
+    background-color: var(--contact-background);
     color: white;
     padding: 60px;
     margin: 40px auto;
     width: 80%;
-    max-width: 1200px; /* Prevents it from being too wide on big screens */
+    max-width: 1200px;
     border-radius: 10px;
-    gap: 40px; /* Adds spacing */
+    gap: 40px;
 }
-
-/* Contact Info */
+.contact-logo {
+    width: 175px;
+    height: 50px;
+    margin-bottom: 5%;
+}
 .contact-info {
     flex: 1;
-    min-width: 300px; /* Prevents it from getting too small */
-    max-width: 40%; /* Keeps balanced size on larger screens */
+    min-width: 300px;
+    max-width: 40%;
     text-align: left;
 }
 .contact-info h2 {
@@ -432,25 +374,20 @@ footer {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
 }
-
 .contact-info p {
     font-size: 28px;
     font-family: 'EB Garamond', serif;
     font-weight: 400;
 }
-
-/* Contact Form */
 .contact-form-container {
     flex: 1;
-    min-width: 300px; /* Prevents the form from shrinking too much */
+    min-width: 300px;
     max-width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
-
-/* Contact Form Styling */
 .contact-form {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
@@ -460,8 +397,6 @@ footer {
     flex-direction: column;
     gap: 15px;
 }
-
-/* Input Fields */
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -469,29 +404,94 @@ footer {
     font-size: 16px;
     border: none;
     border-radius: 6px;
-    background-color: #F0FAFB;
-    color: #6A6A6A;
+    background-color: var(--contact-form-input);
+    color: var(--contact-form-text);
 }
-
-/* Send Button */
 .contact-form button {
-    width: 100%; /* Make button fit form width */
+    width: 100%;
     padding: 12px;
     font-size: 18px;
-    background-color: #F0FAFB;
-    color: #6A6A6A;
+    background-color: var(--contact-form-input);
+    color: var(--contact-form-text);
     border: none;
     border-radius: 36px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
-
 .contact-form button:hover {
-    background-color: #777;
+    background-color: #FFD100;
     color: black;
 }
-
-/* 📱 Mobile Fix: Ensure Stacking on Small Screens */
+/*about page*/
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 40px;
+    width: 80%;
+    margin: 3% auto 10% auto;
+}
+/* Team Member Card */
+.team-member {
+    /*background-color: white;*/
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Placeholder for images (Using a div block) */
+.image-placeholder {
+    width: 100%;
+    height: 180px;
+    background-color: #D9D9D9; /* Gray box instead of an image */
+    border-radius: 16px;
+}
+/* Name Styling */
+.team-member h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    color: var(--about-color1);
+    font-weight: 500;
+}
+/* Role Styling */
+.team-member p {
+    color: var(--about-color2);
+    font-size: 23px;
+    font-weight: 500;
+}
+/*contact form handling input*/
+#name:user-invalid {
+    border: 2px solid red;
+}
+#email:user-invalid {
+    border: 2px solid red;
+}
+#subject:user-invalid {
+    border: 2px solid red;
+}
+#message:user-invalid {
+    border: 2px solid red;
+}
+/* Error message styling */
+.error {
+    color: #ff4d4f;
+    margin-top: -5px;
+    font-size: 0.9em;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+/* Invalid field border color */
+.invalid {
+    border: 2px solid red;
+}
+/* Smooth fade-out for error messages */
+.error.fade-out {
+    opacity: 0;
+}
+/*mobile UI*/
 @media (max-width: 768px) {
     .contact-container {
         flex-direction: column; /* Stacks items */
@@ -535,17 +535,14 @@ footer {
         height: 50%;
         background-color: #F0FAFB;
     }
-
     .right-side, #vision-statement {
         max-width: 100%;
 
     }
-
     .social-icon, .login-icon {
         width: 40px;
         height: 40px;
     }
-
     .content-overlay {
         flex-direction: column; /* Stack logo and icons */
         align-items: center;
@@ -559,112 +556,31 @@ footer {
     .hero-text {
         font-size: 36px; /* Reduce text size */
     }
-
     #mission {
         display: flex;
         justify-content: center;
         margin: auto;
         font-size: 48px; /* Smaller mission title */
     }
-
     #mission-statement {
         display: flex;
         justify-content: center;
         margin: auto;
         font-size: 18px; /* Reduce mission text size */
     }
-
     #vision-statement {
         font-size: 24px; /* Reduce vision text size */
         margin: auto;
     }
-
     .contact-info h2 {
         font-size: 36px; /* Smaller heading */
     }
-
     .contact-info p {
         font-size: 20px; /* Adjust text for readability */
     }
     .quote-box p {
         font-size: 20px;
     }
-}
-
-/*About Section*/
-/* Team Section */
-.team-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows wrapping to new rows */
-    justify-content: center; /* Centers the items */
-    gap: 5px;
-    padding: 40px;
-    width: 80%;
-    margin: 3% auto 20% auto;
-}
-
-/* Team Member Card */
-.team-member {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 250px; /* Fixed width for consistency */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Placeholder for images (Using a div block) */
-.image-placeholder {
-    width: 100%;
-    height: 180px;
-    background-color: #D9D9D9; /* Gray box instead of an image */
-    border-radius: 16px;
-}
-
-/* Name Styling */
-.team-member h3 {
-    margin-top: 10px;
-    font-size: 28px;
-    color: #555555;
-    font-weight: 500;
-}
-
-/* Role Styling */
-.team-member p {
-    color: #555555;
-    font-size: 23px;
-    font-weight: 500;
-}
-#name:user-invalid {
-    border: 2px solid red;
-}
-#email:user-invalid {
-    border: 2px solid red;
-}
-#subject:user-invalid {
-    border: 2px solid red;
-}
-#message:user-invalid {
-    border: 2px solid red;
-}
-/* Error message styling */
-.error {
-    color: #ff4d4f;
-    margin-top: -5px;
-    font-size: 0.9em;
-    display: none;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Invalid field border color */
-.invalid {
-    border: 2px solid red;
-}
-
-/* Smooth fade-out for error messages */
-.error.fade-out {
-    opacity: 0;
 }
 
 
