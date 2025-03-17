@@ -6,26 +6,15 @@ class TeamCard extends HTMLElement {
     }
 
     connectedCallback() {
-        // Apply global CSS once
-        if (!document.querySelector("#team-card-styles")) {
-            const style = document.createElement("style");
-            style.id = "team-card-styles";
-            style.textContent = getTeamCardCSS();
-            document.head.appendChild(style);
-        }
+        this.render();
+    }
 
-        // Read attributes from HTML
-        const name = this.getAttribute("name") || "Unknown Name";
-        const role = this.getAttribute("role") || "Role Not Specified";
-        const imageUrl = this.getAttribute("image-url") || "media/default.jpg";
-        const linkedin = this.getAttribute("linkedin") || "#";
-        const altText = this.getAttribute("alt") || `${name}'s profile picture`;
-
-        // Set the inner HTML
+    set data({ name, role, imageUrl, alt, linkedin }) {
         this.innerHTML = `
+            <style>${getTeamCardCSS()}</style>
             <div class="team-card">
                 <picture>
-                    <img src="${imageUrl}" alt="${altText}">
+                    <img src="${imageUrl}" alt="${alt}">
                 </picture>
                 <h2>${name}</h2>
                 <p>${role}</p>
@@ -33,7 +22,22 @@ class TeamCard extends HTMLElement {
             </div>
         `;
     }
+
+    render() {
+        this.innerHTML = `
+            <style>${getTeamCardCSS()}</style>
+            <div class="team-card">
+                <picture>
+                    <img src="${this.getAttribute('image-url')}" alt="${this.getAttribute('alt')}">
+                </picture>
+                <h2>${this.getAttribute('name')}</h2>
+                <p>${this.getAttribute('role')}</p>
+                <a href="${this.getAttribute('linkedin')}" target="_blank">View LinkedIn</a>
+            </div>
+        `;
+    }
 }
 
-// Define the custom element
 customElements.define("team-card", TeamCard);
+
+

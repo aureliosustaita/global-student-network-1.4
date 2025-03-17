@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="new UI Laptop Version&#10;--reduce redundant css lines&#10;--improved flexbox usage&#10;--UCLA Policy 863 on Filming and Photography on Campus, required me to have permission from UCLA to use campus images. &#10;--removed UCLA images and replaced with images photographed by me">
-      <change afterPath="$PROJECT_DIR$/team-card-css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team-card.js" afterDir="false" />
+    <list default="true" id="809eb4a7-6fd1-4be0-b24e-2f33c9bc36d0" name="Changes" comment="CustomElement Creation">
+      <change afterPath="$PROJECT_DIR$/data-loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/peter-van-eijk-eiDw0oX8YQQ-unsplash-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shipman-northcutt-sgZX15Da8YE-unsplash-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team-card-css.js" beforeDir="false" afterPath="$PROJECT_DIR$/team-card-css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/team-card.js" beforeDir="false" afterPath="$PROJECT_DIR$/team-card.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,15 +118,7 @@
       <workItem from="1741132888425" duration="4230000" />
       <workItem from="1741219502370" duration="5524000" />
       <workItem from="1741392232864" duration="4705000" />
-      <workItem from="1741572308294" duration="46036000" />
-    </task>
-    <task id="LOCAL-00010" summary="+favicon">
-      <option name="closed" value="true" />
-      <created>1738865803146</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1738865803146</updated>
+      <workItem from="1741572308294" duration="52895000" />
     </task>
     <task id="LOCAL-00011" summary="+styles.css">
       <option name="closed" value="true" />
@@ -514,7 +504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742055366483</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="CustomElement Creation">
+      <option name="closed" value="true" />
+      <created>1742179969681</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1742179969682</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -532,7 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="-index.html&#10;-faq.html&#10;-about.html&#10;-resources.html&#10;-partnerships.html&#10;-contact.html" />
     <MESSAGE value="+favicon" />
     <MESSAGE value="+styles.css" />
     <MESSAGE value="index.html, figuring out flexbox" />
@@ -557,6 +554,7 @@
     <MESSAGE value="revamping root elements" />
     <MESSAGE value="Making css file more readable and simplifying it" />
     <MESSAGE value="new UI Laptop Version&#10;--reduce redundant css lines&#10;--improved flexbox usage&#10;--UCLA Policy 863 on Filming and Photography on Campus, required me to have permission from UCLA to use campus images. &#10;--removed UCLA images and replaced with images photographed by me" />
-    <option name="LAST_COMMIT_MESSAGE" value="new UI Laptop Version&#10;--reduce redundant css lines&#10;--improved flexbox usage&#10;--UCLA Policy 863 on Filming and Photography on Campus, required me to have permission from UCLA to use campus images. &#10;--removed UCLA images and replaced with images photographed by me" />
+    <MESSAGE value="CustomElement Creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="CustomElement Creation" />
   </component>
 </project>

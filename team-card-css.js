@@ -21,7 +21,6 @@ export function getTeamCardCSS() {
             width: 100%;
             max-width: 150px;
             height: 150px;
-            border-radius: 50%;
             object-fit: cover;
         }
 
