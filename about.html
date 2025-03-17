@@ -1,3 +1,88 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>About Us</title>-->
+<!--    <link rel="stylesheet" href="styles.css">-->
+<!--    <link rel="icon" type="image/png" href="media/favicon.png">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--</head>-->
+<!--<body>-->
+<!--<noscript>-->
+<!--    <style>-->
+<!--        #theme-toggle-button {-->
+<!--            display: none;-->
+<!--        }-->
+<!--    </style>-->
+<!--    <p style="color: red; text-align: center;">Theme switcher requires JavaScript to work.-->
+<!--        Please enable JavaScript to use this feature.</p>-->
+<!--</noscript>-->
+<!--<header>-->
+<!--    <h1 class="navbar-title">About Us</h1>-->
+<!--    <nav class="navbar-non-home">-->
+<!--        <ul>-->
+<!--            <li><a href="index.html">Home</a></li>-->
+<!--            <li><a href="contact.html">Contact</a></li>-->
+<!--        </ul>-->
+<!--    </nav>-->
+<!--</header>-->
+<!--<section class="team-container">-->
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Milo Gazivoda</h3>-->
+<!--        <p>President</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Milo Gazivoda</h3>-->
+<!--        <p>President</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Milo Gazivoda</h3>-->
+<!--        <p>President</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Edgar Sustaita</h3>-->
+<!--        <p>Treasurer</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Milo Gazivoda</h3>-->
+<!--        <p>President</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Milo Gazivoda</h3>-->
+<!--        <p>President</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Milo Gazivoda</h3>-->
+<!--        <p>President</p>-->
+<!--    </div>-->
+
+<!--    <div class="team-member">-->
+<!--        <div class="image-placeholder"></div>-->
+<!--        <h3>Edgar Sustaita</h3>-->
+<!--        <p>Treasurer</p>-->
+<!--    </div>-->
+<!--</section>-->
+<!--<img src="media/gsn_logo.svg" alt="Global Student Network Logo" class="logo theme-toggle-button" id="theme-toggle-button" style="display: none;">-->
+<!--<hr>-->
+<!--<footer>-->
+<!--    <p>&copy; 2025 Global Student Network. All rights reserved.</p>-->
+<!--</footer>-->
+<!--<script src="script.js"></script>-->
+<!--</body>-->
+<!--</html>-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +91,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="media/favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="team-card.js"></script>
 </head>
 <body>
 <noscript>
@@ -26,55 +112,52 @@
         </ul>
     </nav>
 </header>
+
 <section class="team-container">
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Milo Gazivoda</h3>
-        <p>President</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Milo Gazivoda</h3>
-        <p>President</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Milo Gazivoda</h3>
-        <p>President</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Edgar Sustaita</h3>
-        <p>Treasurer</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Milo Gazivoda</h3>
-        <p>President</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Milo Gazivoda</h3>
-        <p>President</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Milo Gazivoda</h3>
-        <p>President</p>
-    </div>
-
-    <div class="team-member">
-        <div class="image-placeholder"></div>
-        <h3>Edgar Sustaita</h3>
-        <p>Treasurer</p>
-    </div>
+    <team-card
+            name="Milo Gazivoda"
+            role="President, dedicated to managing the team"
+            image-url="media/profile1.jpg"
+            alt="Milo Gazivoda smiling"
+            linkedin="https://www.linkedin.com/in/milo-gazivoda">
+    </team-card>
+    <team-card
+            name="Edgar Sustaita"
+            role="Treasurer, dedicated to financing the team"
+            image-url="media/profile2.jpg"
+            alt="Edgar Sustaita smiling"
+            linkedin="https://www.linkedin.com/in/edgar-sustaita">
+    </team-card>
+    <team-card
+            name="no name"
+            role="role"
+            image-url=""
+            alt=""
+            linkedin="https://www.linkedin.com/">
+    </team-card>
+    <team-card
+            name="no name"
+            role="role"
+            image-url=""
+            alt=""
+            linkedin="https://www.linkedin.com/">
+    </team-card>
+    <team-card
+            name="no name"
+            role="role"
+            image-url=""
+            alt=""
+            linkedin="https://www.linkedin.com/">
+    </team-card>
+    <team-card
+            name="no name"
+            role="role"
+            image-url=""
+            alt=""
+            linkedin="https://www.linkedin.com/">
+    </team-card>
 </section>
+
 <img src="media/gsn_logo.svg" alt="Global Student Network Logo" class="logo theme-toggle-button" id="theme-toggle-button" style="display: none;">
 <hr>
 <footer>
@@ -83,4 +166,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
 
